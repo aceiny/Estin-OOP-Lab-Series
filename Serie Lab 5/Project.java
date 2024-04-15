@@ -1,3 +1,5 @@
+// run "javac Project.java" to compile
+// and then run "java Project" to execute
 import java.util.Scanner;
 
 abstract class Shape {
