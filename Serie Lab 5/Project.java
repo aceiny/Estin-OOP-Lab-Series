@@ -1,8 +1,9 @@
 // run "javac Project.java" to compile
 // and then run "java Project" to execute
 import java.util.Scanner;
+import java.util.Comparator;
 
-abstract class Shape {
+abstract class Shape implements Drawable {
     abstract void area();
     abstract void perimeter();
 }
@@ -13,7 +14,7 @@ interface Drawable {
     };
 }
 
-class Circle extends Shape implements Drawable{
+class Circle extends Shape implements Comparable<Circle>{
     double radius;
     Circle(double radius) {
         this.radius = radius;
@@ -31,7 +32,7 @@ class Circle extends Shape implements Drawable{
     }
 }
 
-class Rectangle extends Shape implements Drawable{
+class Rectangle extends Shape {
     double length, width;
     Rectangle(double length, double width) {
         this.length = length;
@@ -50,7 +51,8 @@ class Rectangle extends Shape implements Drawable{
     }
 }
 
-class Triangle extends Shape implements Drawable{
+
+class Triangle extends Shape {
     double base, height;
     Triangle(double base, double height) {
         this.base = base;
@@ -68,6 +70,15 @@ class Triangle extends Shape implements Drawable{
         System.out.println("Drawing a triangle..");
     }
 }
+public int compareTo(Circle){
+    if (this.radius > Circle.radius) {
+        return 1;
+    } else if (this.radius < Circle.radius) {
+        return -1;
+    } else {
+        return 0;
+    }
+}
 
 public class Project {
     public static void main(String[] args) {
@@ -80,9 +91,15 @@ public class Project {
 
         switch (choice) {
             case 1:
-                System.out.println("Enter the radius of the circle:");
+                for (int i = 0; i < 2; i++) {
+                    System.out.println("Enter the radius of the circle:");
                 double radius = scanner.nextDouble();
                 shape = new Circle(radius);
+                    
+                }
+                
+                
+}  
                 break;
             case 2:
                 System.out.println("Enter the length and width of the rectangle:");
