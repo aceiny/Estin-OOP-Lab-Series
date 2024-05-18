@@ -22,8 +22,7 @@ public class Exo3 {
             System.out.println("You entered: " + number);
         } catch (InvalidInputException e) {
             System.out.println(e.getMessage());
-        } finally {
-            scanner.close();
         }
+        scanner.close();
     }
 }
