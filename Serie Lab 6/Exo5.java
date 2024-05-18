@@ -2,6 +2,7 @@
 file even if an exception occurs. */
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -15,7 +16,10 @@ public class Exo5 {
                 System.out.println(line);
                 line = reader.readLine();
             }
-        }catch(IOException e){
+        }catch(FileNotFoundException e){
+            System.out.println("File not found.");
+        }
+        catch(IOException e){
             System.out.println("An error occurred.");
             e.printStackTrace();
         }finally{
@@ -29,4 +33,4 @@ public class Exo5 {
             }
         }
 
-}
+}}
