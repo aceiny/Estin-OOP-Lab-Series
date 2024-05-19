@@ -47,7 +47,7 @@ class Car extends Vehicle {
     @Override
     public void displayInfo(){
         super.displayInfo();
-        System.out.println("Fuel Efficiency: " + this.fuelEfficiency + " L/100 km");
+        System.out.println("SFuel Efficiency: " + this.fuelEfficiency + " L/100 km");
     }
 }
 public class Exo2 {
