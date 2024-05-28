@@ -33,6 +33,6 @@ public class Exo1{
 
         copyArray(tab); // copy the array
         sortArray(tab); // sorting the array
-        searchArray(tab,50); // search for a value in the array
+        searchArray(tab,50); // search for a value in the array,b
     }
 }
