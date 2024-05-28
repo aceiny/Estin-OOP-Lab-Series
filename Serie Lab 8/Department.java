@@ -5,7 +5,7 @@ Implement serialization and deserialization of an instance of the `Department` c
 `department.ser`. */
 import java.io.*;
 
-public class Exo1 implements Serializable {
+public class Department implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private String name;
@@ -89,3 +89,4 @@ public class Exo1 implements Serializable {
         System.out.println("Deserialized Department: " + deserializedDepartment);
     }
 }
+
