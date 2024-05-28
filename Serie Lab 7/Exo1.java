@@ -1,3 +1,18 @@
+/*Exercise 1:
+1. Declare and Initialise an Array:
+● Declare an array of integers with size 10 and initialise it with random values between 1 and 100.
+2. Traverse the Array:
+● Write a method to traverse the array and print each element.
+3. Copy the Array:
+● Write a method to copy the original array to a new array using System.arraycopy() and print
+both arrays to verify they are identical.
+
+4. Sort the Array:
+● Write a method to sort the array using Arrays.sort() and print the sorted array.
+5. Search in the Array:
+● Write a method to search for a specific value (e.g., 50) in the array using
+Arrays.binarySearch().
+● If the value is found, print its index; otherwise, print a message indicating the value is not found. */
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;

@@ -1,3 +1,23 @@
+/*Exercise 2:
+1. Declare and Initialise Collections:
+● Declare a list of strings and initialise it with the following elements: "apple", "banana", "cherry",
+"apple", "banana".
+● Declare a set of integers and initialise it with the following elements: 10, 20, 30, 10, 20.
+● Declare a map with string keys and integer values, and initialise it with the following key-value
+pairs: "apple" -> 1, "banana" -> 2, "cherry" -> 3.
+
+2. Manipulate Collections:
+● Add a new element to the list: "date".
+● Try to add a duplicate element to the set: 30.
+● Add a new key-value pair to the map: "date" -> 4.
+3. Traverse Collections:
+● Use a for-each loop to traverse the list and print each element.
+● Use an iterator to traverse the set and print each element.
+● Use a for-each loop to traverse the map and print each key-value pair.
+4. Perform Operations on Collections:
+● Sort the list alphabetically and print the sorted list.
+● Calculate the sum of all elements in the set and print the result.
+● Check if the map contains the key "cherry" and print the corresponding value. */
 import java.util.*;
 
 public class Exo2 {
